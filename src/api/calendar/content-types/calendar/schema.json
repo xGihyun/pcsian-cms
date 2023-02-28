@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calendars",
+  "info": {
+    "singularName": "calendar",
+    "pluralName": "calendars",
+    "displayName": "Calendar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "displayName": "Event Dates",
+      "type": "component",
+      "repeatable": false,
+      "component": "date.event-dates"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "holiday",
+        "school"
+      ],
+      "default": "holiday"
+    }
+  }
+}
