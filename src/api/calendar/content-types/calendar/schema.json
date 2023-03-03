@@ -4,7 +4,8 @@
   "info": {
     "singularName": "calendar",
     "pluralName": "calendars",
-    "displayName": "Calendar"
+    "displayName": "Calendar",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,9 +25,29 @@
       "type": "enumeration",
       "enum": [
         "holiday",
-        "school"
+        "grade-school",
+        "junior-high",
+        "senior-high"
       ],
       "default": "holiday"
+    },
+    "senior_high": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::senior-high.senior-high",
+      "inversedBy": "calendars"
+    },
+    "junior_high": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::junior-high.junior-high",
+      "inversedBy": "calendars"
+    },
+    "grade_school": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::grade-school.grade-school",
+      "inversedBy": "calendars"
     }
   }
 }
