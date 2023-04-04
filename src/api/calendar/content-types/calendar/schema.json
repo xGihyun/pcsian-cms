@@ -48,6 +48,9 @@
       "relation": "manyToOne",
       "target": "api::grade-school.grade-school",
       "inversedBy": "calendars"
+    },
+    "color": {
+      "type": "string"
     }
   }
 }
