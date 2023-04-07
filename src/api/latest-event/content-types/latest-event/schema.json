@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "latest_events",
+  "info": {
+    "singularName": "latest-event",
+    "pluralName": "latest-events",
+    "displayName": "Latest Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "source": {
+      "type": "text"
+    }
+  }
+}
