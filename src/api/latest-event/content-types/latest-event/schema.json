@@ -17,17 +17,16 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "default": "Event Title"
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "default": "Event Description"
     },
     "date": {
       "type": "date"

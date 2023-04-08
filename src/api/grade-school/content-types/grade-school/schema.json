@@ -4,7 +4,8 @@
   "info": {
     "singularName": "grade-school",
     "pluralName": "grade-schools",
-    "displayName": "Grade School"
+    "displayName": "Grade School",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
